@@ -1,0 +1,27 @@
+{
+  "id": 0,
+  "layoutOptimization": 0,
+  "publicCustomVisuals": [],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY22SU03",
+            "path": "BaseThemes/CY22SU03.json",
+            "type": 202
+          },
+          {
+            "name": "Bloom",
+            "path": "BuiltInThemes/Bloom.json",
+            "type": 201
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "theme": "Bloom"
+}

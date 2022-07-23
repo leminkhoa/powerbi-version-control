@@ -1,0 +1,16 @@
+{
+  "name": "Population",
+  "dataType": "int64",
+  "sourceColumn": "Population",
+  "formatString": "0",
+  "summarizeBy": "sum",
+  "attributeHierarchy": {
+    "state": "ready"
+  },
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

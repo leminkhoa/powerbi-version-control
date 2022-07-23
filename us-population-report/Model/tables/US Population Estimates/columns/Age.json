@@ -1,0 +1,16 @@
+{
+  "name": "Age",
+  "dataType": "int64",
+  "sourceColumn": "Age",
+  "formatString": "0",
+  "summarizeBy": "sum",
+  "attributeHierarchy": {
+    "state": "ready"
+  },
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

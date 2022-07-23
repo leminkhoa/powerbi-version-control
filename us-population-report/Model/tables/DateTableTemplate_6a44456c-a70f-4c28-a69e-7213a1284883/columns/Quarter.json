@@ -1,0 +1,23 @@
+{
+  "type": "calculated",
+  "name": "Quarter",
+  "dataType": "string",
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "sortByColumn": "QuarterNo",
+  "dataCategory": "Quarters",
+  "summarizeBy": "none",
+  "attributeHierarchy": {
+    "state": "ready"
+  },
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    },
+    {
+      "name": "TemplateId",
+      "value": "Quarter"
+    }
+  ]
+}

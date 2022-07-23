@@ -1,0 +1,124 @@
+{
+  "projectionOrdering": {
+    "Series": [
+      0
+    ],
+    "Y": [
+      1
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Sex",
+        "Name": "US Population Estimates.Sex",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Population",
+        "Name": "Sum(US Population Estimates.Population)",
+        "Type": 3,
+        "Format": "0"
+      }
+    ],
+    "Filters": [
+      {
+        "type": 0,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "US Population Estimates"
+              }
+            },
+            "Property": "Sex"
+          }
+        }
+      },
+      {
+        "type": 2,
+        "expression": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "US Population Estimates"
+                  }
+                },
+                "Property": "Population"
+              }
+            },
+            "Function": 0
+          }
+        }
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Series",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "Y",
+          "Projection": 1,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Sex",
+      "queryName": "US Population Estimates.Sex",
+      "roles": {
+        "Series": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "US Population Estimates"
+            }
+          },
+          "Property": "Sex"
+        }
+      }
+    },
+    {
+      "displayName": "Population",
+      "format": "0",
+      "queryName": "Sum(US Population Estimates.Population)",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "US Population Estimates"
+                }
+              },
+              "Property": "Population"
+            }
+          },
+          "Function": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "US Population Estimates",
+  "partitions": [
+    {
+      "name": "US Population Estimates-7d737098-3e12-40c1-b688-28b1311c3bd3",
+      "mode": "import",
+      "state": "ready",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

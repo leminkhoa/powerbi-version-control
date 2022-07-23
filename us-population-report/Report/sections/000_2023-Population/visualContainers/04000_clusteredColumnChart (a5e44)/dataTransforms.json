@@ -1,0 +1,167 @@
+{
+  "objects": {
+    "valueAxis": [
+      {
+        "properties": {
+          "logAxisScale": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "dataPoint": [
+      {
+        "properties": {
+          "fill": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 5,
+                    "Percent": 0.6
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Category": [
+      0
+    ],
+    "Y": [
+      1
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "US Population Estimates.Age",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Age",
+        "Name": "US Population Estimates.Age",
+        "Type": 3,
+        "Format": "0"
+      },
+      {
+        "Restatement": "Population",
+        "Name": "Sum(US Population Estimates.Population)",
+        "Type": 3,
+        "Format": "0"
+      }
+    ],
+    "Filters": [
+      {
+        "type": 2,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "US Population Estimates"
+              }
+            },
+            "Property": "Age"
+          }
+        }
+      },
+      {
+        "type": 2,
+        "expression": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "US Population Estimates"
+                  }
+                },
+                "Property": "Population"
+              }
+            },
+            "Function": 0
+          }
+        }
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Category",
+          "Projection": 0,
+          "isActive": true
+        },
+        {
+          "Name": "Y",
+          "Projection": 1,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Age",
+      "format": "0",
+      "queryName": "US Population Estimates.Age",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "US Population Estimates"
+            }
+          },
+          "Property": "Age"
+        }
+      }
+    },
+    {
+      "displayName": "Population",
+      "format": "0",
+      "queryName": "Sum(US Population Estimates.Population)",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "US Population Estimates"
+                }
+              },
+              "Property": "Population"
+            }
+          },
+          "Function": 0
+        }
+      }
+    }
+  ]
+}

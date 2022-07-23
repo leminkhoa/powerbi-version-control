@@ -1,0 +1,15 @@
+{
+  "name": "Sex",
+  "dataType": "string",
+  "sourceColumn": "Sex",
+  "summarizeBy": "none",
+  "attributeHierarchy": {
+    "state": "ready"
+  },
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

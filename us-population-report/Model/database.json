@@ -1,0 +1,27 @@
+{
+  "name": "52382368-78cb-4396-b926-f18aacc56543",
+  "compatibilityLevel": 1550,
+  "model": {
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "annotations": [
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.104.941.0 (22.04)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"US Population Estimates\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      }
+    ]
+  }
+}

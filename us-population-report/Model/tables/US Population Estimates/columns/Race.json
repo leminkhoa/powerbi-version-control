@@ -1,0 +1,15 @@
+{
+  "name": "Race",
+  "dataType": "string",
+  "sourceColumn": "Race",
+  "summarizeBy": "none",
+  "attributeHierarchy": {
+    "state": "ready"
+  },
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}
