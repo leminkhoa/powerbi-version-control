@@ -6,6 +6,7 @@ let
     #"Renamed Columns" = Table.RenameColumns(#"Unpivoted Columns",{{"Attribute", "Age"}, {"Value", "Population"}}),
     #"Removed Columns" = Table.RemoveColumns(#"Renamed Columns",{"Total Population"}),
     #"Replaced Value" = Table.ReplaceValue(#"Removed Columns","Age ","",Replacer.ReplaceText,{"Age"}),
-    #"Changed Type1" = Table.TransformColumnTypes(#"Replaced Value",{{"Age", Int64.Type}})
+    #"Changed Type1" = Table.TransformColumnTypes(#"Replaced Value",{{"Age", Int64.Type}}),
+    #"Filtered Rows" = Table.SelectRows(#"Changed Type1", each ([Sex] <> "Both") and ([Origin] <> "Total") and ([Race] <> "All Races"))
 in
-    #"Changed Type1"
+    #"Filtered Rows"
