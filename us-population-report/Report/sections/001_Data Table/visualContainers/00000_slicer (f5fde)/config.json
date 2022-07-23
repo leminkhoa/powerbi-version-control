@@ -1,0 +1,70 @@
+{
+  "name": "f5fded520ac6f07b6761",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 30.15197568389058,
+        "y": 144.92401215805472,
+        "z": 2,
+        "width": 177.99392097264439,
+        "height": 101.15501519756839
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "slicer",
+    "projections": {
+      "Values": [
+        {
+          "queryRef": "US Population Estimates.Sex",
+          "active": true
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "u",
+          "Entity": "US Population Estimates",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "u"
+              }
+            },
+            "Property": "Sex"
+          },
+          "Name": "US Population Estimates.Sex"
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Basic'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {}
+        }
+      ]
+    }
+  }
+}

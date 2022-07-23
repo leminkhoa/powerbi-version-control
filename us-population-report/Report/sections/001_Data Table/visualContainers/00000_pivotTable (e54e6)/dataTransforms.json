@@ -1,0 +1,407 @@
+{
+  "objects": {
+    "subTotals": [
+      {
+        "properties": {
+          "columnSubtotals": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "rowSubtotals": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "perColumnLevel": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "grid": [
+      {
+        "properties": {
+          "gridVertical": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "columnHeaders": [
+      {
+        "properties": {
+          "backColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 5,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "values": [
+      {
+        "properties": {
+          "valuesOnRow": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "columnFormatting": [
+      {
+        "properties": {
+          "labelDisplayUnits": {
+            "expr": {
+              "Literal": {
+                "Value": "1000000D"
+              }
+            }
+          },
+          "labelPrecision": {
+            "expr": {
+              "Literal": {
+                "Value": "2L"
+              }
+            }
+          },
+          "fontColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 8,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          },
+          "styleHeader": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "styleTotal": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Sum(US Population Estimates.Population)"
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Rows": [
+      0
+    ],
+    "Columns": [
+      4,
+      3,
+      2
+    ],
+    "Values": [
+      1
+    ]
+  },
+  "projectionActiveItems": {
+    "Rows": [
+      {
+        "queryRef": "US Population Estimates.Year",
+        "suppressConcat": false
+      }
+    ],
+    "Columns": [
+      {
+        "queryRef": "US Population Estimates.Sex",
+        "suppressConcat": false
+      },
+      {
+        "queryRef": "US Population Estimates.Race",
+        "suppressConcat": false
+      },
+      {
+        "queryRef": "US Population Estimates.Origin",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Year",
+        "Name": "US Population Estimates.Year",
+        "Type": 3,
+        "Format": "0"
+      },
+      {
+        "Restatement": "Population",
+        "Name": "Sum(US Population Estimates.Population)",
+        "Type": 3,
+        "Format": "0"
+      },
+      {
+        "Restatement": "Origin",
+        "Name": "US Population Estimates.Origin",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Race",
+        "Name": "US Population Estimates.Race",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Sex",
+        "Name": "US Population Estimates.Sex",
+        "Type": 2048
+      }
+    ],
+    "Filters": [
+      {
+        "type": 2,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "US Population Estimates"
+              }
+            },
+            "Property": "Year"
+          }
+        }
+      },
+      {
+        "type": 2,
+        "expression": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "US Population Estimates"
+                  }
+                },
+                "Property": "Population"
+              }
+            },
+            "Function": 0
+          }
+        }
+      },
+      {
+        "type": 0,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "US Population Estimates"
+              }
+            },
+            "Property": "Origin"
+          }
+        }
+      },
+      {
+        "type": 0,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "US Population Estimates"
+              }
+            },
+            "Property": "Sex"
+          }
+        }
+      },
+      {
+        "type": 0,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "US Population Estimates"
+              }
+            },
+            "Property": "Race"
+          }
+        }
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Rows",
+          "Projection": 0,
+          "isActive": true
+        },
+        {
+          "Name": "Columns",
+          "Projection": 4,
+          "isActive": true
+        },
+        {
+          "Name": "Columns",
+          "Projection": 3,
+          "isActive": true
+        },
+        {
+          "Name": "Columns",
+          "Projection": 2,
+          "isActive": true
+        },
+        {
+          "Name": "Values",
+          "Projection": 1,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Year",
+      "format": "0",
+      "queryName": "US Population Estimates.Year",
+      "roles": {
+        "Rows": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "US Population Estimates"
+            }
+          },
+          "Property": "Year"
+        }
+      }
+    },
+    {
+      "displayName": "Population",
+      "format": "0",
+      "queryName": "Sum(US Population Estimates.Population)",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "US Population Estimates"
+                }
+              },
+              "Property": "Population"
+            }
+          },
+          "Function": 0
+        }
+      }
+    },
+    {
+      "displayName": "Origin",
+      "queryName": "US Population Estimates.Origin",
+      "roles": {
+        "Columns": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "US Population Estimates"
+            }
+          },
+          "Property": "Origin"
+        }
+      }
+    },
+    {
+      "displayName": "Race",
+      "queryName": "US Population Estimates.Race",
+      "roles": {
+        "Columns": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "US Population Estimates"
+            }
+          },
+          "Property": "Race"
+        }
+      }
+    },
+    {
+      "displayName": "Sex",
+      "queryName": "US Population Estimates.Sex",
+      "roles": {
+        "Columns": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "US Population Estimates"
+            }
+          },
+          "Property": "Sex"
+        }
+      }
+    }
+  ]
+}
