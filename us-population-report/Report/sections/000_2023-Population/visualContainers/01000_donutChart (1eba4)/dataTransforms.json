@@ -34,24 +34,6 @@
             "Property": "Sex"
           }
         }
-      },
-      {
-        "type": 2,
-        "expression": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "US Population Estimates"
-                  }
-                },
-                "Property": "Population"
-              }
-            },
-            "Function": 0
-          }
-        }
       }
     ]
   },

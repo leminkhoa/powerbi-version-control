@@ -62,39 +62,6 @@
         "Type": 3,
         "Format": "0"
       }
-    ],
-    "Filters": [
-      {
-        "type": 2,
-        "expression": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "US Population Estimates"
-              }
-            },
-            "Property": "Age"
-          }
-        }
-      },
-      {
-        "type": 2,
-        "expression": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "US Population Estimates"
-                  }
-                },
-                "Property": "Population"
-              }
-            },
-            "Function": 0
-          }
-        }
-      }
     ]
   },
   "visualElements": [
