@@ -1,0 +1,70 @@
+{
+  "name": "06b01d8c7dbbfbedeae0",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 30.15197568389058,
+        "y": 517.44680851063833,
+        "z": 3,
+        "width": 177.99392097264439,
+        "height": 101.15501519756839
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "slicer",
+    "projections": {
+      "Values": [
+        {
+          "queryRef": "US Population Estimates.Origin",
+          "active": true
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "u",
+          "Entity": "US Population Estimates",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "u"
+              }
+            },
+            "Property": "Origin"
+          },
+          "Name": "US Population Estimates.Origin"
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Basic'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {}
+        }
+      ]
+    }
+  }
+}
